@@ -14,13 +14,13 @@ public class Student {
         this.age = age;
         this.averageScore = averageScore;
     }
-    public String getname(){
+    public String getName(){
         return name;
     }
     public void setname(){
         this.name = name;
     }
-    public int getage(){
+    public int getAge(){
         return age;
     }
     public void setage(){

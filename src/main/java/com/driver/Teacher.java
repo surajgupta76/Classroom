@@ -14,19 +14,19 @@ public class Teacher {
         this.numberOfStudents = numberOfStudents;
         this.age = age;
     }
-    public String getname(){
+    public String getName(){
         return name;
     }
     public void setname(){
         this.name = name;
     }
-    public int getnumberOfStudents(){
+    public int getNumberOfStudents(){
         return numberOfStudents;
     }
     public void setnumberOfStudents(){
         this.numberOfStudents = numberOfStudents;
     }
-    public int getage(){
+    public int getAge(){
         return age;
     }
     public void setage(){

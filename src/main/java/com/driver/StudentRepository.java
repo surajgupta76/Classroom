@@ -15,11 +15,11 @@ public class StudentRepository {
     Map<String,List<String>> teacherstudentmapping = new HashMap<>();
 
     public void addstudentindb(Student student) {
-        studentmap.put(student.getname(),student);
+        studentmap.put(student.getName(),student);
     }
 
     public void addteacherindb(Teacher teacher) {
-        teachermap.put(teacher.getname(),teacher);
+        teachermap.put(teacher.getName(),teacher);
     }
 
     public void addStudentTeacherPairindb(String student, String teacher) {
