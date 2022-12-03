@@ -6,9 +6,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public class StudentRepository {
     Map<String,Student> studentmap = new HashMap<>();
     Map<String,Teacher> teachermap = new HashMap<>();
@@ -26,10 +26,11 @@ public class StudentRepository {
         if(studentmap.containsKey(student) && teachermap.containsKey(teacher)){
             studentmap.put(student,studentmap.get(student));
             teachermap.put(teacher,teachermap.get(teacher));
-            List<String> studentlist = new ArrayList<>();
+            List<String> studentlist = new ArrayList<String>();
             if(teacherstudentmapping.containsKey(teacher)){
-                studentlist.add(student);
+                studentlist = teacherstudentmapping.get(teacher);
             }
+            studentlist.add(student);
             teacherstudentmapping.put(teacher,studentlist);
         }
     }
