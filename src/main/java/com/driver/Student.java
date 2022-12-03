@@ -17,19 +17,19 @@ public class Student {
     public String getName(){
         return name;
     }
-    public void setname(){
+    public void setName(String name){
         this.name = name;
     }
     public int getAge(){
         return age;
     }
-    public void setage(){
+    public void setAge(int age){
         this.age = age;
     }
-    public double getaverageScore(){
+    public double getAverageScore(){
         return averageScore;
     }
-    public void setaverageScore(){
+    public void setAverageScore(double averageScore){
         this.averageScore = averageScore;
     }
 
