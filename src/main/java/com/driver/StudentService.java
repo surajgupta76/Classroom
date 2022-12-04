@@ -9,7 +9,8 @@ import org.springframework.stereotype.Service;
 public class StudentService {
     @Autowired
     StudentRepository studentrepository;
-
+    // sending to repo layer
+    
     public void addstudenttodb(Student student) {
         studentrepository.addstudentindb(student);
     }
